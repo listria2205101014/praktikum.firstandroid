@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "praktikum.firstandroid"
+rootProject.name = "MyActivityApp"
 include(":app")
