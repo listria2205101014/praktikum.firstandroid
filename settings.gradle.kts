@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "IntentPraktikum"
+rootProject.name = "FragmentApp"
 include(":app")
