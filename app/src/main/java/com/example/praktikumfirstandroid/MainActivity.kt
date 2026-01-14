@@ -2,20 +2,20 @@ package com.example.praktikumfirstandroid
 
 import android.os.Bundle
 import android.widget.GridView
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // 1. Pakai layout GridView
+        // Set layout GridView
         setContentView(R.layout.gridview)
 
-        // 2. Ambil GridView
-        val gridView: GridView = findViewById(R.id.grid_view)
+        // Inisialisasi GridView
+        val gridView = findViewById<GridView>(R.id.grid_view)
 
-        // 3. Pasang adapter (JAVA -> KOTLIN AMAN)
+        // Pasang adapter
         gridView.adapter = ImageAdapter(this)
     }
 }
